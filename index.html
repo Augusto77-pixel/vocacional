@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Teste Vocacional</title>
+  <meta name="description" content="Descubra sua vocação profissional com um teste simples e interativo.">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container" aria-live="polite">
+    <div class="header">
+      <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/5f4f4203-a185-4868-acb8-5190a869a454.png" alt="Logo" class="logo">
+      <h1>Descubra sua vocação</h1>
+      <p>Responda o teste e veja qual área combina mais com você.</p>
+    </div>
+
+    <div class="progress-bar" aria-label="Progresso do teste">
+      <div class="track">
+        <div class="fill" id="progress-fill"></div>
+      </div>
+      <div class="progress-text" id="progress-text">1 / 10</div>
+    </div>
+
+    <form id="testForm" novalidate>
+      <!-- Perguntas serão geradas aqui -->
+    </form>
+
+    <div id="result" style="display:none;" aria-live="polite">
+      <h2>Seu Resultado:</h2>
+      <p id="resultText"></p>
+      <button id="reset" type="button">Refazer teste</button>
+      <div id="credit">Feito por @augusto.xv7</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
